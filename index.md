@@ -41,18 +41,14 @@ In this paper, we consider COVID-19 infection segmentation in the context of the
 </p>
 
 # Acknowlegements
-This research work is supported by the Air Force Office of Scientific Research (award number FA2386-19-1-4001).
+This research is supported by the GovernmentWide R&D Fund Project for Infectious Disease Research (GFID), Republic of Korea (grant number: HG19C0682).
 
 # Citation
 ```
-@article{chen2022unsupervised,
-  title={Unsupervised domain adaptation based COVID-19 CT infection segmentation network},
-  author={Chen, Han and Jiang, Yifan and Loew, Murray and Ko, Hanseok},
-  journal={Applied Intelligence},
-  volume={52},
-  number={6},
-  pages={6340--6353},
-  year={2022},
-  publisher={Springer}
+@article{chen2021teacher,
+  title={A Teacher-Student Framework with Fourier Augmentation for COVID-19 Infection Segmentation in CT Images},
+  author={Chen, Han and Jiang, Yifan and Ko, Hanseok and Loew, Murray},
+  journal={arXiv preprint arXiv:2110.06411},
+  year={2021}
 }
 ```
