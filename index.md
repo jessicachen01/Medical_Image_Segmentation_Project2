@@ -3,7 +3,7 @@
 </p>
 <p align="center">
   Comparison of the pulmonary nodule and COVID-19 infection in CT images. (a) shows a typical nodule of lung cancer and (b) illustrates the infection of a COVID-19 confirmed case. The nodule and infection are marked with red. 
-  In terms of distribution, COVID-19 presents as a bilateral, patchy infection, while early-stage lung cancer is unilateral and oval in shape. While there is also a clear difference in intensity due to the use of different scanners, scanning protocols, and subject populations.
+  <br> In terms of distribution, COVID-19 presents as a bilateral, patchy infection, while early-stage lung cancer is unilateral and oval in shape. While there is also a clear difference in intensity due to the use of different scanners, scanning protocols, and subject populations.
   <br>  Here comes the question: "How to effeiciently utilize labeled lung cancer CT data for the COVID-19 infection segmentation task?"
 </p>
 
