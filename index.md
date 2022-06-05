@@ -13,6 +13,14 @@ Automatic segmentation of infected regions in computed tomography (CT) images is
 
 # Overview
 
+<p align="center">
+  <img width="70%" height="auto" src="resources/Fig2.png">
+</p>
+<p align="center">
+ Our network consists of a CGFT-DA module, a student network, and a teacher network. The dashed lines and solid lines represent the data flow for the lung cancer images and COVID-19 images, respectively. The student network is trained by the weighted combination of dice loss, consistency loss, and entropy loss. The weights of the teacher network are the exponential moving average of that of the student network. τ(·) represents an elastic transformation operation with the same parameters in every iteration.
+</p>
+
+
 In this paper, we consider COVID-19 infection segmentation in the context of the wide availability of lung cancer CT images with annotations, the limited availability of unlabeled COVID-19 CT images, and the difference between these two domains. Our motivation is that the features learned from pulmonary nodules in lung cancer CT can be used for the segmentation of COVID-19 infection, making it possible to construct an unsupervised COVID-19 infection segmentation method. For our segmentation network, we design a novel COVID-19 style guided Fourier transform-based data augmentation method (CGFT-DA) and a training scheme to align these two datasets. In order to address the intensity difference, we transfer the lung cancer CT images into the style of COVID-19 CT images with the designed CGFT-DA module based on Fourier transform, which replaces the low-level frequency information of the lung cancer CT images with that of COVID-19 CT images. The output of the CGFTDA module will keep the same semantic information with the lung cancer image but in the COVID-19 image style. Since the lung cancer CT images are labeled at pixel-level, the transferred images and corresponding annotations can be used to train the base segmentation network. To overcome the distribution difference, we introduce a teacher-student learning paradigm to achieve robust features learning. We treat our base segmentation network as a student network and introduce another teacher network, and then impose the same elastic transformation on the input to the student network and the output of the teacher network, respectively. The output predictions of these two networks are forced to be consistent. We validate the effectiveness of our proposed method with public COVID-19 CT images. Experimentally, it outperforms various competing state-of-the-art approaches.
 
 
