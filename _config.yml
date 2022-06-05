@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
 
-title: Unsupervised domain adaptation based COVID-19 CT infection segmentation network
-description: A novel domain adaptation based method proposed for the high-performance segmentation of COVID-19 infection in CT scans even without access to the label.  <br />
+title: A Teacher-Student Framework with Fourier Augmentation for COVID-19 Infection Segmentation in CT Images
+description: A novel teacher-student network based method proposed for utilizing the lung cancer data to enhance the segmentation performance for COVID-19 infeciton in CT images.  <br />
