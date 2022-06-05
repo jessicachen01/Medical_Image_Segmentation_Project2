@@ -21,22 +21,23 @@ Automatic segmentation of infected regions in computed tomography (CT) images is
 </p>
 
 
+<p align="center">
+  <img width="70%" height="auto" src="resources/Fig3.png">
+</p>
+<p align="center">
+  CGFT-DA module. The Fourier transform is first conducted on the two inputs, and part of the amplitude spectrum from the lung cancer image is replaced with that from the COVID-19 image. After inverse Fourier transform, the output image will keep the semantic information of the lung cancer image but with COVID-19 style.
+</p>
+
+
 In this paper, we consider COVID-19 infection segmentation in the context of the wide availability of lung cancer CT images with annotations, the limited availability of unlabeled COVID-19 CT images, and the difference between these two domains. Our motivation is that the features learned from pulmonary nodules in lung cancer CT can be used for the segmentation of COVID-19 infection, making it possible to construct an unsupervised COVID-19 infection segmentation method. For our segmentation network, we design a novel COVID-19 style guided Fourier transform-based data augmentation method (CGFT-DA) and a training scheme to align these two datasets. In order to address the intensity difference, we transfer the lung cancer CT images into the style of COVID-19 CT images with the designed CGFT-DA module based on Fourier transform, which replaces the low-level frequency information of the lung cancer CT images with that of COVID-19 CT images. The output of the CGFTDA module will keep the same semantic information with the lung cancer image but in the COVID-19 image style. Since the lung cancer CT images are labeled at pixel-level, the transferred images and corresponding annotations can be used to train the base segmentation network. To overcome the distribution difference, we introduce a teacher-student learning paradigm to achieve robust features learning. We treat our base segmentation network as a student network and introduce another teacher network, and then impose the same elastic transformation on the input to the student network and the output of the teacher network, respectively. The output predictions of these two networks are forced to be consistent. We validate the effectiveness of our proposed method with public COVID-19 CT images. Experimentally, it outperforms various competing state-of-the-art approaches.
 
 
 # COVID-19 CT Infection Segmentation Results
 <p align="center">
-  <img width="80%" height="auto" src="resources/fig2.png">
+  <img width="80%" height="auto" src="resources/Fig4.png">
 </p>
 <p align="center">
-Qualitative results for two-class segmentation task. Columns 1 and 2 present the input real COVID-19 CT images and corresponding ground truth, while Column 6 is the segmentation result of our proposed method. The first to last rows are the results when taking ground-glass opacity (a), consolidation (b), infection (c) and the lung (d) as the segmentation object, respectively.
-</p>
-
-<p align="center">
-  <img width="80%" height="auto" src="resources/fig3.png">
-</p>
-<p align="center">
-Qualitative results for multi-class segmentation task. Columns 1 and 2 show the input real COVID-19 CT images and corresponding ground truth, in which the ground-glass opacity is marked in blue, consolidation is marked in green, and the lung is marked in red. Columns 7 is the segmentation result for our proposed method.
+  Qualitative results for the segmentation task. The first column presents the input COVID-19 CT images with the ground truth marked in red, while columns 6 is the segmentation results of our proposed method.
 </p>
 
 # Acknowlegements
