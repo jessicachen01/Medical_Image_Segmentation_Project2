@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
 
-title: A Teacher-Student Framework with Fourier Augmentation for COVID-19 Infection Segmentation in CT Images
+title: A teacher-student framework with Fourier augmentation for COVID-19 infection segmentation in CT Images
 description: A novel teacher-student network based method proposed for utilizing the lung cancer data to enhance the segmentation performance for COVID-19 infeciton in CT images.  <br />
