@@ -45,10 +45,12 @@ This research is supported by the GovernmentWide R&D Fund Project for Infectious
 
 # Citation
 ```
-@article{chen2021teacher,
-  title={A Teacher-Student Framework with Fourier Augmentation for COVID-19 Infection Segmentation in CT Images},
+@article{chen2022teacher,
+  title={A teacher-student framework with Fourier Transform augmentation for COVID-19 infection segmentation in CT images},
   author={Chen, Han and Jiang, Yifan and Ko, Hanseok and Loew, Murray},
-  journal={arXiv preprint arXiv:2110.06411},
-  year={2021}
+  journal={Biomedical Signal Processing and Control},
+  pages={104250},
+  year={2022},
+  publisher={Elsevier}
 }
 ```
